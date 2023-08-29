@@ -1,0 +1,208 @@
+= Peer To Peer Documentation
+Authour <Bryne Kimocks>
+1.0.0, Aug 29, 2023: 
+:toc:
+:icons: font
+:url-quickref: https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/
+
+
+[%always]
+<<< 
+ 
+
+[quote, Peer 2 Peer, Job Seekers & Offers]
+____
+TIP: Be the world you want to see.
+____
+
+
+== Introduction
+
+=== Background
+The purpose of the Peer 2 Peer specifications is to translate the Employeers & Employees concepts (eBusiness requirements) into specifications that enable software developers and message designers to develop the Peer 2 Peer system.
+
+.Peer 2 Peer functional specifications goals are:
+* To build a set of business objects from the Employeers & Employees concepts
+* To help unempolyed people to get jobs 
+* To help employeers to be able to get casual workers
+* To create a smooth communication between employeers and employees
+
+
+=== How it works:
+=====
+The purpose of this website is to help both employeers and employees to find part time workers and part time jobs, respectively. Firstly the *Employeer* will create an account & publish the time of job he is offering ( Domestic worker, Tutoring, Plumbing & Painting) and the fee he is offering to pay per hour.
+
+The *Employee* will then login and look for a job which fits his experience. During account creation both the Employeer and the employee will create an account based on the time of a job they want to be delivered and deliver, respectively. 
+
+The *Admin* is responsible for monitoring users, deleting accounts if the suspect any fraud.
+=====
+
+
+
+
+== Stakeholders
+
+TIP: This is important to fully explain all the roles of each and every stakeholder.
+
+// comment.
+
+=== Employeer
+.The Roles of an Employeer are to create and login into their Peer 2 Peer account and: 
+. Post a job
+.. Describe the type of a job he is Offering add Location
+.. Hourly pay rate.
+.. See active employees and their qualification (filter by location)
+.. Message employees.
+. Delete Job post
+. Accept/Reject  employee offer
+. Review employee after work done.
+. Add employee to favourites list.
+. Manage account (Delete account, change password, forgot password, Upload Profile picture)
+. Search and filter:
+.. Job Offers but wont be able to message them
+.. Job seekers and be able to view their profile and message them.
+.. search based on location, can change location from default (current)
+. SUBSCRIPTION (WITH TIME)*
+
+=== Employee
+.The Roles of an Employee are to create and login into their Peer 2 Peer account and: 
+. Create profile (Experience, location, Upload CVs, Certificates and Other)
+.. Describe their experience and skills
+.. Expected hourly pay rate.
+.. See activite job posts and the location
+.. Message employeers.
+. Accept/Reject  employeer offer 
+. Request for review (2 external and the rest internal)
+. Add job to favourites list.
+. Manage account (Delete account, change password, forgot password, Upload Profile picture)
+. Verify account by uploading national document.
+. Search and filter:
+.. Job Offers and be able to message them
+.. Job seekers and be able to view their profile, but wont able to message them.
+.. search based on location, can change location from default (current)
+. SUBSCRIPTION (WITH TIME)*
+
+=== Admin
+.Their profiles are hardcoded into the system.
+. See activite job posts and the location
+. Count total job posts and also by location
+. See how many Job seekers got jobs
+. See total users (Employees and Employeers)
+. Delete/Suspend Users
+. Verify users
+. Read messages for fraud alers from both users( Employees and Employeers)
+. MANAGE SUBSCRIPTIONS (WITH TIME)
+
+
+== Technology
+====
+The following technologies and colours are going to be used.
+====
+
+.Colours
+* Primary Colours
+** *Light blue* is going to be the primary colour for *Domestic worker*  
+** *Light green* is going to be the primary colour for *Tutoring* Painting
+** *Sky Blue with purple finishing* is going to be the primary colour for *Plumbing* 
+** *Lime green* is going to be the primary colour for *Painting*
+* Secondary Colour
+** This is going to be white (White backgrounds and white font colour on secondary colour)
+* Font Colour
+** Black going to be used.
+* Colour on Cards and Others
+** Light grey is going to be used for cards to be visible on secondary colour & and other where its neccesary. 
+
+=== Front End
+* React js is going to be used inorder to archieve nice look and feel.
+* Bootstrap, Materialize css are going to be used for UI/UX design.
+
+=== Back End
+* ASP.NET framework is going to be used.
+* JASON web tokens for authenication.
+* Google signin is also going to be used
+
+=== Database
+* PostgresSQL (60%) or MySQL (40%) is going to be used.
+
+
+== Diagrams
+
+
+This is a link to the https://docs.asciidoctor.org/home/[Asciidoctor documentation].
+
+
+===  Use Cases
+
+The follwing are use cases to be used
+
+=== Activity Digrams
+The following are activity digrams for each user
+
+== Useful Tools (To Be Deleted)
+=== Unordered list title Example
+.Unordered list title
+* list item 1
+** nested list item testing
+*** nested nested list item 1
+*** nested nested list item 2
+* list item 2
+
+This is a paragraph.
+
+=== Block Title
+.Example block title
+====
+Content in an example block is subject to normal substitutions.
+====
+
+=== Side title
+.Sidebar title
+****
+Sidebars contain aside text and are subject to normal substitutions.
+****
+
+=== Odered List
+. ordered list item
+.. nested ordered list item
+. ordered list item
+
+=== Cool stuff
+
+==== Third level heading
+
+[#id-for-listing-block]
+.Listing block title
+----
+Content in a listing block is subject to verbatim substitutions.
+Listing block content is commonly used to preserve code input.
+----
+
+===== Fourth level heading
+
+.Table title
+|===
+|Column heading 1 |Column heading 2
+
+|Column 1, row 1
+|Column 2, row 1
+
+|Column 1, row 2
+|Column 2, row 2
+|===
+
+====== Fifth level heading
+
+[quote, firstname lastname, movie title]
+____
+I am a block quote or a prose excerpt.
+I am subject to normal substitutions.
+____
+
+[verse, firstname lastname, poem title and more]
+____
+I am a verse block.
+  Indents and endlines are preserved in verse blocks.
+____
+
+=== How to Cross Reference?
+The text at the end of this sentence is cross referenced to <<_third_level_heading,the third level heading>>
